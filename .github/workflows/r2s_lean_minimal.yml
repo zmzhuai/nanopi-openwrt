@@ -72,6 +72,14 @@ jobs:
           CONFIG_PACKAGE_pigz=y
           CONFIG_PACKAGE_unzip=y
           CONFIG_PACKAGE_losetup=y
+          CONFIG_PACKAGE_luci-app-mwan3=y
+          CONFIG_PACKAGE_luci-app-mwan3helper=y
+          CONFIG_PACKAGE_luci-i18n-mwan3-zh-cn=y
+          CONFIG_PACKAGE_luci-i18n-mwan3helper-zh-cn=y
+          CONFIG_PACKAGE_luci-app-nps=y
+          CONFIG_PACKAGE_luci-i18n-nps-zh-cn=y
+          CONFIG_PACKAGE_npc=y
+          CONFIG_PACKAGE_mwan3=y
           CONFIG_PACKAGE_luci-app-frpc=y
           CONFIG_PACKAGE_luci-app-netdata=y
           CONFIG_LIBSODIUM_MINIMAL=y
