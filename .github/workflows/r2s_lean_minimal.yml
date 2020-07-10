@@ -148,6 +148,7 @@ jobs:
           sed -i '/ipv6/,+3d' package/base-files/files/root/setup.sh
           git checkout upstream/master -- feeds.conf.default
           sed -i -E 's/#(src-git.+)(helloworld.+)/\1\2/' feeds.conf.default
+          sed -i "s/enabled = true/enabled = false/g" package/feeds/helloworld/luci-app-ssr-plus/root/usr/share/shadowsocksr/genv2config.lua
           cd package/lean/
           #git clone https://github.com/jerrykuku/lua-maxminddb.git
           #git clone https://github.com/jerrykuku/luci-app-vssr.git
