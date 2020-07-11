@@ -197,6 +197,8 @@ jobs:
           rm -rf package/lean/luci-app-pptp-server
           rm -rf package/lean/luci-app-v2ray-server
           ./scripts/feeds install -a
+          sed -i "s/enabled = true/enabled = false/g" package/feeds/helloworld/luci-app-ssr-plus/root/usr/share/shadowsocksr/genv2config.lua
+          
 
       - name: Build FriendlyWrt
         run: |
@@ -250,3 +252,4 @@ jobs:
           asset_path: ./artifact.zip
           asset_name: ${{ steps.assemble_artifact.outputs.release_tag }}-ROM.zip
           asset_content_type: application/zip
+
